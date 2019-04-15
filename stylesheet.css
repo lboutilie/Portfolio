@@ -2,6 +2,20 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: white;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  width: 100vw;
+}
+
 nav {
   display: flex;
   background-color: red;
@@ -31,16 +45,16 @@ nav:not(.is-open) ul {
   align-items: center;
   height: 50px;
   width: 50px;
-  background: yellow;
+  background: white;
   border-radius: 50%;
 }
 
 .open-icon, 
 .open-icon::before,
 .open-icon::after {
-  width: 30px;
+  width: 20px;
   height: 4px;
-  background: purple;
+  background: rgb(224, 139, 139);
 }
 
 .open-icon::before,
@@ -84,20 +98,114 @@ ul {
 li {
   list-style: none;
   font-size: 35px;
+  text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
+  letter-spacing: 6px;
 }
 
-h1 {
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.presentation {
+  display: flex;
+  width: 80vw;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#oval {
+  height: 50vh;
+}
+
+.lea {
+  font-weight: bold;
+  margin-top: -400px;
+}
+
+.spe {
+  font-weight: 100;
+  font-size: 28px;
+  margin-top: -330px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+#origami {
+  max-width: 70vw;
+  margin-bottom: 10px;
+  margin-top: -150px;
+}
+
+.pitch {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  color: rgb(43, 41, 41);
+  font-size: 12px;
+}
+
+.projets {
+  margin-top: 10px;
+  color: rgb(214, 150, 150);
+}
+
+.explorer {
+  margin-top: 30px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.explorer__button {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  line-height: 2.5;
+  border-radius: 30px;
+  padding: 0 25px;
+  background-color: rgb(214, 150, 150);
+  text-align: center;
+  color: white;
+  transition: color 292.416ms ease-in-out 207.584ms;
+  z-index: 1;
 }
 
-@media (min-width: 600px) {
+footer {
+  margin-top: 10px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#dribbble {
+  margin: auto;
+  margin-top: 10px;
+  height: 50%;
+  max-width: 10vw;
+  display: block;
+}
+
+@media (min-width: 530px) {
   header {
+    width: 100vw;
     height: 70px;
-    background-color: pink;
+    background-color: rgb(196, 169, 187);
   }
 
   nav {
@@ -107,6 +215,10 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: row;
+  }
+
+  .me {
+    visibility: hidden;
   }
 
   nav.is-open {
@@ -127,6 +239,108 @@ h1 {
 
   li {
     font-size: 15px;
+    text-transform: none;
+    letter-spacing: 4px;
   }
-}
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .lea {
+    margin-top: 44px;
+    margin-bottom: 0px;
+    font-size: 45px;
+    margin-left: -60px;
+    font-weight: 900;
+  }
+
+  .spe {
+    margin-top: -15px;
+    font-size: 40px;
+    font-weight: 300;
+    margin-right: -10px;
+  }
+
+  #origami {
+    width: 40vw;
+  }
+
+  .projets {
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-size: 22px;
+  }
+
+  .pitch {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin-top: 30px;
+    background-color: white;
+    padding: 40px;
+    color: rgb(43, 41, 41);
+    font-size: 16px;
+  }
+
+  .project {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 830px) {
+    ul {
+      justify-content: space-evenly;
+    }
+
+    .ball {
+    }
+
+    .lea {
+      font-size: 45px;
+    }
+
+    .spe {
+      font-size: 45px;
+      margin-left: 50px;
+    }
+
+    #origami {
+      width: 30vw;
+    }
+  }
+
+  @media (min-width:1000px) {
+
+    .presentation {
+      height: 400px;
+      width: 400px;
+    }
+
+    .ball {
+
+    }
+
+    .lea {
+      position: relative;
+      z-index: -5;
+      margin-top: -30px;
+      color: rgb(214, 150, 177);
+    }
+
+    .spe {
+      font-size: 50px;
+    }
+
+    #origami {
+      width: 20vw;
+    }
+  }
+}  
 

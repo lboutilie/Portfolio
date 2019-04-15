@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="stylesheet.css">
     <script defer src="script.js"></script>
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Poppins');
+      @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700,900');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
     </style>
   </head>  
 
   <body>
     <header>
-      <h1 class="me">Léa Boutilié</h1>
       <nav id="nav">
         <ul>
-          <li>P R O J E T S</li>
-          <li><a href="">À  P R O P O S</a></li>
-          <li>C O N T A C T</li>
+          <li>projets</li>
+          <li><a href="about.html">à propos</a></li>
+          <li>contact</li>
         </ul>
         <div class="open" id="open">
           <div class="open-icon">
@@ -31,7 +33,32 @@
     </header>
 
     <main>
-      <h1></h1>
+      <div class="presentation">
+          <img id="oval" alt="rond rose" src="assets/oval.png">
+          <h1 class="lea">Léa Boutilié</h1>
+          <h2 class="spe">UX/UI Designer</h2>
+          <img id="origami" alt="grue origami" src="assets/grueoriga.png">
+      </div>
+      
+      <div class="pitch">
+        <article>
+          <h1 class="projets">Bienvenue</h1>
+          <p>Au cours de cette année, j’ai réalisé tant bien en équipe que seule plusieurs projets digitaux. De l’intégration
+            de sites à la réalisation d’un jeu vidéo, en passant par la refonte d’un site de restauration suivant une étude 
+            User Expérience précise, j’ai pu au cours de ces projets monter en compétences avec plusieurs logiciels de 
+            Design tels que Sketch, Figma, Illustrator et développer mes connaissances en développement
+            avec les langages HTML, CSS et JavaScript.
+          </br>Je vous invite à les découvrir à travers mon portfolio !</p>
+        </article>
+      </div>
+
+      <div class="explorer">
+        <button class="explorer__button white" type="button"><span>EXPLORER</span></button>
+      </div>
     </main>
+
+    <footer>
+      <a href="https://dribbble.com/leabtl"><img id="dribbble" alt="dribbble icon" src="assets/dribbble-icon.png"></a>
+    </footer>
   </body>
 </html>  
