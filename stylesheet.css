@@ -18,7 +18,7 @@ header {
 
 nav {
   display: flex;
-  background-color: red;
+  background-color: rgb(224, 139, 139);
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -40,6 +40,7 @@ nav:not(.is-open) ul {
 }
 
 .open {
+  display: flex;
   position: fixed;
   justify-content: center;
   align-items: center;
@@ -53,7 +54,7 @@ nav:not(.is-open) ul {
 .open-icon::before,
 .open-icon::after {
   width: 20px;
-  height: 4px;
+  height: 3px;
   background: rgb(224, 139, 139);
 }
 
@@ -121,26 +122,28 @@ main {
 }
 
 #oval {
-  height: 50vh;
+  height: 45vh;
 }
 
 .lea {
+  font-size: 29px;
   font-weight: bold;
-  margin-top: -400px;
+  margin-top: -260px;
 }
 
 .spe {
   font-weight: 100;
-  font-size: 28px;
-  margin-top: -330px;
+  font-size: 36px;
+  margin-top: -27px;
   margin-bottom: 30px;
-  margin-left: 50px;
+  margin-left: 52px;
 }
 
 #origami {
-  max-width: 70vw;
+  max-width: 60vw;
+  margin-left: 20px;
   margin-bottom: 10px;
-  margin-top: -150px;
+  margin-top: -40px;
 }
 
 .pitch {
@@ -238,7 +241,7 @@ footer {
   }
 
   li {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: none;
     letter-spacing: 4px;
   }
@@ -249,29 +252,35 @@ footer {
     flex-wrap: wrap;
   }
 
+  .presentation {
+    display: flex;
+    flex-direction: column;
+  }
+
   .lea {
-    margin-top: 44px;
+    margin-top: -54px;
     margin-bottom: 0px;
     font-size: 45px;
-    margin-left: -60px;
+    margin-left: -190px;
     font-weight: 900;
   }
 
   .spe {
     margin-top: -15px;
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 70px;
+    font-weight: 100;
     margin-right: -10px;
   }
 
   #origami {
-    width: 40vw;
+    margin-top: -50px;
+    width: 30vw;
   }
 
   .projets {
     margin-top: 30px;
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 28px;
   }
 
   .pitch {

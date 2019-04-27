@@ -3,4 +3,5 @@ var open = document.getElementById('open');
 
 nav.addEventListener('click', function() {
   nav.classList.toggle('is-open');
-})
+});
+
